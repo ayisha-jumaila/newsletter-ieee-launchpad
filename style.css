@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color:#f4f4f4;
+    background-color:#094729;
     color: #333;
 }
 
@@ -10,7 +10,7 @@ body {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #38292b;
+    background-color: #ab7f0f;
     color: white;
     border-radius: 20px;
 }
@@ -133,7 +133,7 @@ button:hover {
 }
 
 .box {
-    background-color: #8b0000;
+    background-color: #ab7f0f;
     color: #f4f4f4;
     border-radius: 10px;
     padding: 20px;
