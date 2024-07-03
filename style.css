@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ab7f0f;
+    background-color: #6cab8c;
     color: #333;
 }
 
@@ -133,7 +133,7 @@ button:hover {
 }
 
 .box {
-    background-color: #094729;
+    background-color: #ab7f0f;
     color: #f4f4f4;
     border-radius: 10px;
     padding: 20px;
@@ -163,7 +163,7 @@ button:hover {
 }
 
 .event-box {
-    background-color: #094729;
+    background-color: #ab7f0f;
     color: #f4f4f4;
     border-radius: 10px;
     padding: 20px;
