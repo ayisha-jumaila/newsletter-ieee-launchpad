@@ -18,11 +18,42 @@ body {
 .navbar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 111px;
     width: 100%;
     background-color: #1c1c1c;
     border-radius: 10px;
     padding: 10px;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links ul li {
+    margin: 0 10px;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
 }
 
 button {
@@ -111,3 +142,45 @@ button:hover {
     position: relative;
 }
 
+.box-content {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.inner-box {
+    background-color: white;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.footer a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 720px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
