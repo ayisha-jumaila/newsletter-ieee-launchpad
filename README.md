@@ -1,5 +1,5 @@
-# newsletter-ieee-launchpad 
-##by Ayisha Jumaila
+# IEEE Launchpad Newsletter Website
+#by Ayisha Jumaila
 
 **✨Content Guidelines:**
 
