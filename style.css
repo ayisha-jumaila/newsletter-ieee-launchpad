@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color:#f4f4f4;
     color: #333;
 }
 
@@ -10,7 +10,7 @@ body {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #722F37;
+    background-color: #38292b;
     color: white;
     border-radius: 20px;
 }
@@ -18,7 +18,7 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 111px;
     width: 100%;
     background-color: #1c1c1c;
@@ -26,33 +26,34 @@ body {
     padding: 10px;
 }
 
-.search-bar {
+.nav-links ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
+    list-style: none;
+    padding: 0;
 }
 
-.search-bar input {
-    width: 80%;
-    padding: 10px;
-    border-radius: 5px 0 0 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
+.nav-links ul li {
+    margin: 0 10px;
 }
 
-.search-bar button {
-    padding: 10px;
-    border: none;
-    background-color: #8b0000;
+.nav-links ul li a {
     color: white;
-    cursor: pointer;
-    border-radius: 0 5px 5px 0;
-    font-size: 16px;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-.search-bar button:hover {
-    background-color: #6b0000;
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
 }
 
 button {
@@ -91,6 +92,35 @@ button:hover {
 .intro-image img {
     max-width: 100%;
     height: auto;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    background-color: #8b0000;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+}
+
+.search-bar button:hover {
+    background-color: #6b0000;
 }
 
 .feature {
@@ -175,4 +205,17 @@ button:hover {
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 720px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
 }
