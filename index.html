@@ -11,37 +11,50 @@
 <body>
     <div class="container">
         <div class="navbar">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <img src="./image/Launchpad-Kerala-Logo.png" height="100px" width="auto" />
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#latest-update">Latest Update</a></li>
+                    <li><a href="#event-roadmap">Event Roadmap</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
         <div class="intro-image">
             <img src="./image/launchpadnewsletter.png" alt="Launchpad Newsletter" height="200px" width="auto">
         </div>
-        <h2>About Us</h2>
+        <h2 id="about">About Us</h2>
         <div class="intro">
             <p>Launchpad Kerala 2024 is a premier job fair that brings together talented individuals and innovative companies in the technical and engineering fields. This collaboration between IEEE Kerala Section and GTech MuLearn aims to create meaningful connections that drive progress and innovation in Kerala's job market.</p>
         </div>
         <div>
-            <a href="https://launchpadkerala.org"> <button type="button">Register now</button>
+            <a href="https://launchpadkerala.org"> <button type="button">Register Now</button>
             </a>
         </div>
         <section>
-            <div class="feature">
-                <h2>Latest update</h2>
+            <div class="feature" id="latest-update">
+                <h2>Latest Update</h2>
                 <div class="feature-container">
                     <div class="box">
-                        <h3>Registration Closed</h3>
-                        <p>Registration is now closed.</p>
+                        <h3>Registration About to Close!</h3>
+                        <p>Don't miss out on this opportunity. Register now before it's too late.</p>
                     </div>
                     <div class="box">
-                        <h3>Start Your Launchpad Challenges Today!</h3>
-                        <p>Kick start your journey with us.</p>
+                        <h3>Kick Start Your Career Today!</h3>
+                        <p>Embark on your professional journey with us and unlock new opportunities.</p>
                     </div>
                 </div>
             </div>
         </section>
         <section>
             <div class="event-header">
-                <h3>Event Roadmap</h3>
+                <h3 id="event-roadmap">Event Roadmap</h3>
             </div>
             <div class="event-container">
                 <div class="event-box">
@@ -103,11 +116,22 @@
             </div>
         </section>
         <footer>
-            <div class="footer">
+            <div class="footer" id="contact">
                 <p>© 2024 IEEE LaunchPad Kerala</p>
+                <p>Email: contact@launchpadkerala.org</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Follow us on <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
             </div>
         </footer>
     </div>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
