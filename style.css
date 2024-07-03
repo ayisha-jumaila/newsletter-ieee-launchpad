@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color:#094729;
+    background-color: #ab7f0f;
     color: #333;
 }
 
@@ -10,7 +10,7 @@ body {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color:#ab7f0f;
+    background-color: #094729;
     color: white;
     border-radius: 20px;
 }
@@ -64,14 +64,14 @@ button {
     border-radius: 10px;
     font-size: 15px;
     color: #fff;
-    background-color: #8b0000;
+    background-color: #094729;
     cursor: pointer;
     border: none;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #6b0000;
+    background-color: #722F37;
 }
 
 .intro {
@@ -112,7 +112,7 @@ button:hover {
 .search-bar button {
     padding: 10px;
     border: none;
-    background-color: #8b0000;
+    background-color: #094729;
     color: white;
     cursor: pointer;
     border-radius: 0 5px 5px 0;
@@ -120,7 +120,7 @@ button:hover {
 }
 
 .search-bar button:hover {
-    background-color: #6b0000;
+    background-color: #722F37;
 }
 
 .feature {
@@ -133,7 +133,7 @@ button:hover {
 }
 
 .box {
-    background-color: #ab7f0f;
+    background-color: #094729;
     color: #f4f4f4;
     border-radius: 10px;
     padding: 20px;
@@ -163,7 +163,7 @@ button:hover {
 }
 
 .event-box {
-    background-color: #8b0000;
+    background-color: #094729;
     color: #f4f4f4;
     border-radius: 10px;
     padding: 20px;
@@ -199,7 +199,7 @@ button:hover {
 }
 
 .footer a {
-    color: #8b0000;
+    color: #094729;
     text-decoration: none;
 }
 
