@@ -26,6 +26,10 @@
                 </ul>
             </nav>
         </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search..." />
+            <button type="button">Search</button>
+        </div>
         <div class="intro-image">
             <img src="./image/launchpadnewsletter.png" alt="Launchpad Newsletter" height="200px" width="auto">
         </div>
@@ -115,11 +119,23 @@
                 </div>
             </div>
         </section>
+        <section class="message-section">
+            <h2>Send Us a Message</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
         <footer>
             <div class="footer" id="contact">
                 <p>© 2024 IEEE LaunchPad Kerala</p>
                 <p>Email: contact@launchpadkerala.org</p>
-                <p>Phone: +91 98765 43210</p>
+                <p>Phone: +91 14493 33432</p>
                 <p>Follow us on <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
             </div>
         </footer>
